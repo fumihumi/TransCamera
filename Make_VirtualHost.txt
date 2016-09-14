@@ -1,0 +1,44 @@
+
+[CentOS の場合]一つのIPアドレスで複数のドメインを作る。（仮想ドメイン）
+
+mkdir /var/www/[作成したいドメイン名のディレクトリ]　//ドメインのディレクトリを作成
+chown [ユーザー名] : [ユーザー名（グループ）] var/www/[作成したディレクトリ]
+
+
+/etc/httpd/conf.d/vhosts.conf　を作る。
+
+NameVirtualHost *:80
+
+<VirtualHost *:80>
+	ServerName [任意のドメイン名]
+	DocumentRoot /var/www/[コンテンツを置く場所]
+	DirectoryIndex index.html index.php
+
+
+	<Directory "/var/www/[ドキュメントルート]">
+		AllowOverride All
+		Allow from All
+	</Directory>
+</VirtualHost>
+
+/etc/hosts に 127.0.0.1 [任意のドメイン名]を追加
+
+/etc/httpd/conf/httpd.confを編集
+
+#ServerName www.example.com:80
+SeverName [追加したいドメイン]:80  //追加
+service httpd start
+
+webコンテンツにアクセスしてforbiddenが出る場合
+SElinuxとiptablesが邪魔している可能性があるので
+
+$ getemforce
+enforcing
+
+とかになっていたら
+$ setenforce 0    //一時的にSElinuxを無効化する
+
+iptablesを止める
+
+$service iptables stop
+
