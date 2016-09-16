@@ -1,6 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <!--
+    このページは以下のURLの記事を参考にしました。    
+    http://try.buildwinjs.com/tutorial/1Basics/markSupport/
+    -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <title>TransCamera</title>
@@ -24,19 +28,13 @@
                     <button class="win-splitviewpanetoggle"
                             data-win-control="WinJS.UI.SplitViewPaneToggle"
                             data-win-options="{ splitView: select('.splitView') }"></button>
-                    <div class="title"><h2 class="win-h2">All Trails</h2></div>
+                    <div class="title"><h2 class="win-h2">翻訳カメラ</h2></div>
 
                 </div>
                 <div class="nav-commands">
-                    <div data-win-control="WinJS.UI.SplitViewCommand"
-                         data-win-options="{
-                        label: 'Home',
-                        icon: 'home',
-                        
-                    }"></div>
-                    <div data-trail-id="0" data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Take a picture', icon: 'camera', oninvoked: mySplitView.trailClicked}"></div>
-                    <div data-trail-id="1" data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Translate', icon: 'globe', oninvoked: mySplitView.trailClicked}"></div>
-                    <div data-trail-id="2" data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Alki Trail', icon: 'settings', oninvoked: mySplitView.trailClicked}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Take a picture', icon: 'camera', oninvoked: mySplitView.takePicture}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Translate', icon: 'globe', oninvoked: mySplitView.recognize}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Setting', icon: 'settings', oninvoked: mySplitView.settings}"></div>
                 </div>
             </div>
             <!-- Content area -->
@@ -44,27 +42,13 @@
                     data-win-control="WinJS.UI.SplitViewPaneToggle"
                     data-win-options="{ splitView: select('.splitView') }"></button>
             <div class="contenttext">
-                <div class="trail-ui">
-                    <!-- TRAIL DESCRIPTION -->
-                    <div class="description">
-                        <!-- this is where the title, location and description are injected for each hiking page -->
-                        <h2 class="trail-title"></h2>
-                        <p class="trail-location"></p>
-                        <p class="trail-description" id="description-content"></p>
-                        <!--RATING-->
-                        <table>
-                            <tr class="detail">
-                                <td>Rate this trail: </td>
-                                <td class="control">
-                                    <div class="rating" data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4}"></div>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--END RATING-->
-                    </div>
-                </div>  <!-- closes trail-ui-->
                 <div class="home-ui">
-                    <h2 class="win-h2">Home Page</h2>
+                    <h2 class="win-h2">ホーム画面</h2>
+                    <p>ここにメインとなるキャンバスを配置することになります</p>
+                </div>
+                <div class="settings-ui">
+                    <h2 class="win-h2">設定画面</h2>
+                    <p>ここになにかしらの設定画面を配置します</p>
                 </div>
             </div>
         </div>
