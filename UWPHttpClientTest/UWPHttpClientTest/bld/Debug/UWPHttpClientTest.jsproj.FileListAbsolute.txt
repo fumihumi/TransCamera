@@ -1,0 +1,16 @@
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\ReverseMap\resources.pri
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\AppxManifest.xml
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\UWPHttpClientTest.build.appxrecipe
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\ResourceHandlingTask.state
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\priconfig.xml
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\priconfig.xml.intermediate
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\layout.resfiles
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\layout.resfiles.intermediate
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\resources.resfiles
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\resources.resfiles.intermediate
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\pri.resfiles
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\pri.resfiles.intermediate
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\qualifiers.txt
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\qualifiers.txt.intermediate
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\ProjectArchitectures.txt
