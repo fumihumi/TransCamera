@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>581fdc2f-7e3f-4b8e-b0a6-a3b700f5e68b</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>E489EF77EC9C3C17B611CC0517DA6BA10584961CA2E142F69BDC1D02F8CC7081</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>581fdc2f-7e3f-4b8e-b0a6-a3b700f5e68b_1.0.0.0_neutral__5fxchgnw0wa9c</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>581fdc2f-7e3f-4b8e-b0a6-a3b700f5e68b_5fxchgnw0wa9c!App</RegisteredUserModeAppID>
@@ -19,86 +19,90 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-07T07:32:37.318</Modified>
+      <Modified>2016-09-27T09:24:03.958</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\default.html">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2016-09-07T07:33:35.099</Modified>
+      <Modified>2016-09-27T09:39:00.427</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\images\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\LockScreenLogo.scale-200.png">
       <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\images\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\SplashScreen.scale-200.png">
       <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\images\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square150x150Logo.scale-200.png">
       <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\images\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square44x44Logo.scale-200.png">
       <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\images\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\StoreLogo.png">
       <PackagePath>images\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\images\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Wide310x150Logo.scale-200.png">
       <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\js\default.js">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2016-09-21T03:32:07.476</Modified>
+      <Modified>2016-09-27T09:59:14.936</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\en-US\ui.strings.js">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\js\jquery-2.2.5.min.js">
+      <PackagePath>js\jquery-2.2.5.min.js</PackagePath>
+      <Modified>2016-09-27T09:29:04.479</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\en-US\ui.strings.js">
       <PackagePath>WinJS\js\en-US\ui.strings.js</PackagePath>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\base.js">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\base.js">
       <PackagePath>WinJS\js\base.js</PackagePath>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\ui.js">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\ui.js">
       <PackagePath>WinJS\js\ui.js</PackagePath>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\css\default.css">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\css\default.css">
       <PackagePath>css\default.css</PackagePath>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\WinJS\css\ui-dark.css">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\css\ui-dark.css">
       <PackagePath>WinJS\css\ui-dark.css</PackagePath>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\WinJS\css\ui-light.css">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\css\ui-light.css">
       <PackagePath>WinJS\css\ui-light.css</PackagePath>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\WinJS\fonts\Symbols.ttf">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\fonts\Symbols.ttf">
       <PackagePath>WinJS\fonts\Symbols.ttf</PackagePath>
       <Modified>2015-10-10T12:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Visual Studio 2015\Projects\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-09-07T07:32:37.071</Modified>
+      <Modified>2016-09-27T09:24:03.783</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
