@@ -29,7 +29,6 @@
 
 	function init() {
 	    document.getElementById("send").onclick = function () {
-	        console.log("HELLO");
 	        var uri = new Windows.Foundation.Uri("http://localhost/php/board.html");
 	        var client = new Windows.Web.Http.HttpClient();
 	        client.getStringAsync(uri).done(function (data) {
