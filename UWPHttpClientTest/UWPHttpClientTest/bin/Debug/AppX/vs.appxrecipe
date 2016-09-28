@@ -22,87 +22,87 @@
     <AppXManifest Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-27T23:23:43.947</Modified>
+      <Modified>2016-09-28T04:40:33.192</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2016-09-27T23:45:11.527</Modified>
+      <Modified>2016-09-28T04:37:14.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\LockScreenLogo.scale-200.png">
       <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-09-27T23:15:28.389</Modified>
+      <Modified>2016-09-28T01:04:39.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\SplashScreen.scale-200.png">
       <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-27T23:15:28.393</Modified>
+      <Modified>2016-09-28T01:04:39.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square150x150Logo.scale-200.png">
       <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-27T23:15:28.397</Modified>
+      <Modified>2016-09-28T01:04:39.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square44x44Logo.scale-200.png">
       <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-27T23:15:28.401</Modified>
+      <Modified>2016-09-28T01:04:39.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-27T23:15:28.401</Modified>
+      <Modified>2016-09-28T01:04:39.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\StoreLogo.png">
       <PackagePath>images\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-27T23:15:28.405</Modified>
+      <Modified>2016-09-28T01:04:39.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Wide310x150Logo.scale-200.png">
       <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-09-27T23:15:28.409</Modified>
+      <Modified>2016-09-28T01:04:39.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2016-09-28T00:29:53.921</Modified>
+      <Modified>2016-09-28T04:37:14.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\js\jquery-2.2.5.min.js">
       <PackagePath>js\jquery-2.2.5.min.js</PackagePath>
-      <Modified>2016-09-27T23:22:35.902</Modified>
+      <Modified>2016-09-28T04:40:07.566</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\en-US\ui.strings.js">
       <PackagePath>WinJS\js\en-US\ui.strings.js</PackagePath>
-      <Modified>2016-09-27T23:15:29.620</Modified>
+      <Modified>2016-09-28T01:04:39.783</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\base.js">
       <PackagePath>WinJS\js\base.js</PackagePath>
-      <Modified>2016-09-27T23:15:29.573</Modified>
+      <Modified>2016-09-28T01:04:39.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\ui.js">
       <PackagePath>WinJS\js\ui.js</PackagePath>
-      <Modified>2016-09-27T23:15:30.477</Modified>
+      <Modified>2016-09-28T01:04:40.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2016-09-27T23:15:28.361</Modified>
+      <Modified>2016-09-28T04:37:14.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\css\ui-dark.css">
       <PackagePath>WinJS\css\ui-dark.css</PackagePath>
-      <Modified>2016-09-27T23:15:28.667</Modified>
+      <Modified>2016-09-28T04:36:33.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\css\ui-light.css">
       <PackagePath>WinJS\css\ui-light.css</PackagePath>
-      <Modified>2016-09-27T23:15:28.698</Modified>
+      <Modified>2016-09-28T04:36:33.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\fonts\Symbols.ttf">
       <PackagePath>WinJS\fonts\Symbols.ttf</PackagePath>
-      <Modified>2016-09-27T23:15:28.714</Modified>
+      <Modified>2016-09-28T01:04:39.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-09-27T23:23:43.073</Modified>
+      <Modified>2016-09-28T04:40:32.064</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
