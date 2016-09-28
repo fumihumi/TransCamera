@@ -15,6 +15,7 @@
 				// スムーズなユーザー エクスペリエンスとなるよう、ここでアプリケーション状態を復元し、アプリが停止したようには見えないようにします。
 			}
 			args.setPromise(WinJS.UI.processAll());
+			init();
 		}
 	};
 
@@ -26,7 +27,34 @@
 
 	app.start();
 
+	function init() {
+	    document.querySelector('#speak').onclick = function () {
 
+	        // unsupported.
+	        if (!'SpeechSynthesisUtterance' in window) {
+	            alert('Web Speech API には未対応です.');
+	            return;
+	        }
+
+	        // 話すための機能をインスタンス化色々と値を設定.
+	        var msg = new SpeechSynthesisUtterance();
+	        var voices = window.speechSynthesis.getVoices();
+	        msg.volume = document.querySelector('#volume').value;
+
+	        msg.text = document.querySelector('#text').value;
+	        msg.rate = document.querySelector('#rate').value;
+	        //  msg.pit document.querySelector('#text').value; // しゃべる内容
+	        msg.lang = document.querySelector('#selectVoice').value; // en-US or ja-UP
+
+	        // 終了した時の処理
+	        msg.onend = function (event) {
+	            console.log('speech end. time=' + event.elapsedTime + 's');
+	        }
+	        speechSynthesis.speak(msg); // テキストスピーチ開始
+	    };
+
+
+	};
 })();
 
 
@@ -78,4 +106,5 @@
     });
 
     app.start();
+         
 })();
