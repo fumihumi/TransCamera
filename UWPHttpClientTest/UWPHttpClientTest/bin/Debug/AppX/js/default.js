@@ -1,6 +1,6 @@
 ﻿// 空白のテンプレートの概要については、次のドキュメントを参照してください:
 // http://go.microsoft.com/fwlink/?LinkId=232509
-function () {
+(function () {
     "use strict";
 
     var app = WinJS.Application;
@@ -27,7 +27,9 @@ function () {
 
     app.start();
 
-    window.onload = function init() {
+    var accessToken;
+
+    function init() {
 
         var uri = new Windows.Foundation.Uri("https://datamarket.accesscontrol.windows.net/v2/OAuth2-13");
         var client = new Windows.Web.Http.HttpClient();
@@ -50,22 +52,29 @@ function () {
             console.log(err);
         });
     }
-    $('send').click(function () {
-        var text = $('a').text;
 
-        data = { text: text, to: "en", from: "ja" };
+    $(function(){
+        $('#send').click(function () {
+            var text = $('#a').text();
 
-        $.ajax({
-            headers: {
-                'Authorization': 'Bearer ' + accessToken
-            },
-            url: 'http://api.microsofttranslator.com/v2/Http.svc/Translate',
-            data: data
-        }).done(function (data) {
-            var json = JSON.parse(data);
-            console.log(json);
-        });
-    });
+            var parameters = { text: text, to: "en", from: "ja" };
 
+            $.ajax({
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken
+                },
+                url: 'http://api.microsofttranslator.com/v2/Ajax.svc/Translate',
+                data: parameters,
+                dataType: "json",
+                success: function (success) {
+                    console.log(success)
+                }
+            }).done(function (response) {
+                console.log(response);
+            }, function (error){
+                console.log(error)
+            })
+        })
+    })
 
-}
+})()

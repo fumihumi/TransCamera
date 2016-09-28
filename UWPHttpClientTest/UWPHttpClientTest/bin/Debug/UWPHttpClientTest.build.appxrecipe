@@ -1,81 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>PC1260128</Machine>
-    <WindowsUser>n1260128</WindowsUser>
+    <Machine>PC3C166784</Machine>
+    <WindowsUser>admin</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>581fdc2f-7e3f-4b8e-b0a6-a3b700f5e68b</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bld\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\default.html">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\default.html">
       <PackagePath>default.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\LockScreenLogo.scale-200.png">
       <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\SplashScreen.scale-200.png">
       <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square150x150Logo.scale-200.png">
       <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square44x44Logo.scale-200.png">
       <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\StoreLogo.png">
       <PackagePath>images\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\images\Wide310x150Logo.scale-200.png">
       <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\js\default.js">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\js\jquery-2.2.5.min.js">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\js\jquery-2.2.5.min.js">
       <PackagePath>js\jquery-2.2.5.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\en-US\ui.strings.js">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\en-US\ui.strings.js">
       <PackagePath>WinJS\js\en-US\ui.strings.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\base.js">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\base.js">
       <PackagePath>WinJS\js\base.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\ui.js">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\js\ui.js">
       <PackagePath>WinJS\js\ui.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\css\default.css">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\css\ui-dark.css">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\css\ui-dark.css">
       <PackagePath>WinJS\css\ui-dark.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\css\ui-light.css">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\css\ui-light.css">
       <PackagePath>WinJS\css\ui-light.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\fonts\Symbols.ttf">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\WinJS\fonts\Symbols.ttf">
       <PackagePath>WinJS\fonts\Symbols.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="C:\Users\admin\Source\Repos\KanaCon2016\TransCamera\UWPHttpClientTest\UWPHttpClientTest\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
