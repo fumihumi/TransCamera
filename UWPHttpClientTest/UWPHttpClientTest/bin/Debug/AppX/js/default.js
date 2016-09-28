@@ -69,10 +69,6 @@
                 success: function (success) {
                     console.log(success)
                 }
-            }).done(function (response) {
-                console.log(response);
-            }, function (error){
-                console.log(error)
             })
         })
     })
