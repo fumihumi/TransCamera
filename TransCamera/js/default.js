@@ -220,10 +220,11 @@
                 accessToken = token;
             }).then(null, function (err) {
                 console.log(err);
-            }).then(function () {
-                var text = $('#selectedText').text();
+            }).done(function () {
+                var text = $('#selectedText').text(),
+                    To = $('#languageTranslate').val();
 
-                var parameters = { text: text, to: "en", from: "ja" };
+                var parameters = { text: text, to: To, from: "ja" };
 
                 $.ajax({
                     headers: {
