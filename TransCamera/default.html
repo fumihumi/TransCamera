@@ -16,6 +16,7 @@
 
     <!-- TransCamera 参照 -->
     <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/jquery-2.2.5.min.js"></script>
     <script src="/js/default.js"></script>
 </head>
 <body class="win-type-body">
@@ -43,8 +44,10 @@
                     data-win-options="{ splitView: select('.splitView') }"></button>
             <div class="contenttext">
                 <div class="home-ui">
-                    <h2 class="win-h2">ホーム画面</h2>
-                    <p>ここにメインとなるキャンバスを配置することになります</p>
+                    <p>選択した文字列：<span id="selectedText"></span></p>
+                    <img id="imgCapture" style="display:none" />
+                    <canvas id="picture"></canvas>
+                    <ul id="list"></ul>
                 </div>
                 <div class="settings-ui">
                     <h2 class="win-h2">設定画面</h2>
