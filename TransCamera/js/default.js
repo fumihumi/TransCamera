@@ -27,7 +27,7 @@
 
 	app.start();
 
-	  
+
 })();
 
 
@@ -56,7 +56,7 @@
                 if (results[i].rect.isHit(x, y)) {
                     document.getElementById("selectedText").textContent = results[i].text;
                 
-               }
+                }
             }
         }
     })
