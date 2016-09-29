@@ -16,6 +16,7 @@
 
     <!-- TransCamera 参照 -->
     <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/jquery-2.2.5.min.js"></script>
     <script src="/js/default.js"></script>
 </head>
 <body class="win-type-body">
@@ -43,37 +44,11 @@
                     data-win-options="{ splitView: select('.splitView') }"></button>
             <div class="contenttext">
                 <div class="home-ui">
-                    <h2 class="win-h2">ホーム画面2</h2>
-                    <p>ここにメインとなるキャンバスを配置することになります</p>
-
-                    <p style="font-weight:700;">Input words below.</p>
-                    <input id="text" type="text" placeholder="Words to put here." />
-                    <br>
-
-                    <select id="selectVoice">
-                        <option value="ja-JP">japan</option>
-                        <option value="en-US">English</option>
-                        <option value="ko-KR">한국의</option>
-                        <option value="it-IT">Italiano</option>
-                        <option value="es-ES">Español</option>
-                        <option value="de-DE">Deutsch</option>
-                        <option value="fr-FR">Francais</option>
-                        <option value="en-GB">UK English Female</option>
-                        <option value="en-GB">UK English Male</option>
-                    </select>
-
-                    <br /> 音量：
-                    <input type="range" id="volume" min="0" max="1" step="0.05" value="1" /> 
-                    速度：
-                    <input type="range" id="rate" min="0" max="1.5" step="0.05" value="1" />
-                    <!--
-    <input type="range" id="pitch" min="0" max="2" step="0.2" value="1" />    -->
-                    <br />
-
-                   <input id="speak"  type="button" value="Speak"style="width:200px;height:50px;"/>
+                    <p>選択した文字列：<span id="selectedText"></span></p>
+                    <img id="imgCapture" style="display:none" />
+                    <canvas id="picture"></canvas>
+                    <ul id="list"></ul>
                 </div>
-
-
                 <div class="settings-ui">
                     <h2 class="win-h2">設定画面</h2>
                     <p>ここになにかしらの設定画面を配置します</p>
