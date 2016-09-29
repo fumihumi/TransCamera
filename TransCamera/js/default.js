@@ -40,8 +40,7 @@
 	        var msg = new SpeechSynthesisUtterance();
 	        var voices = window.speechSynthesis.getVoices();
 	        msg.volume = document.querySelector('#volume').value;
-
-	        msg.text = document.querySelector('#text').value;
+	        msg.text = document.querySelector("#selectedText");
 	        msg.rate = document.querySelector('#rate').value;
 	        //  msg.pit document.querySelector('#text').value; // しゃべる内容
 	        msg.lang = document.querySelector('#selectVoice').value; // en-US or ja-UP
@@ -82,7 +81,8 @@
                     y = e.offsetY;
                 if (results[i].rect.isHit(x, y)) {
                     document.getElementById("selectedText").textContent = results[i].text;
-                }
+                
+               }
             }
         }
     })
