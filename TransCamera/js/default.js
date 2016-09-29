@@ -1,37 +1,37 @@
 ﻿// 空白のテンプレートの概要については、次のドキュメントを参照してください:
 // http://go.microsoft.com/fwlink/?LinkId=232509
-(function () {
-	"use strict";
+(function() {
+    "use strict";
 
-	var app = WinJS.Application;
-	var activation = Windows.ApplicationModel.Activation;
+    var app = WinJS.Application;
+    var activation = Windows.ApplicationModel.Activation;
 
-	app.onactivated = function (args) {
-		if (args.detail.kind === activation.ActivationKind.launch) {
-			if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
-				//TODO: このアプリケーションは新しく起動しました。ここでアプリケーションを初期化します。
-			} else {
-				// TODO: このアプリケーションは中断されてから終了しました。
-				// スムーズなユーザー エクスペリエンスとなるよう、ここでアプリケーション状態を復元し、アプリが停止したようには見えないようにします。
-			}
-			args.setPromise(WinJS.UI.processAll());
-		
-		}
-	};
+    app.onactivated = function(args) {
+        if (args.detail.kind === activation.ActivationKind.launch) {
+            if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
+                //TODO: このアプリケーションは新しく起動しました。ここでアプリケーションを初期化します。
+            } else {
+                // TODO: このアプリケーションは中断されてから終了しました。
+                // スムーズなユーザー エクスペリエンスとなるよう、ここでアプリケーション状態を復元し、アプリが停止したようには見えないようにします。
+            }
+            args.setPromise(WinJS.UI.processAll());
 
-	app.oncheckpoint = function (args) {
-		//TODO: このアプリケーションは中断しようとしています。ここで中断中に維持する必要のある状態を保存します。
-		// WinJS.Application.sessionState オブジェクトを使用している可能性があります。このオブジェクトは、中断の間自動的に保存され、復元されます。
-		//ご使用のアプリケーションを中断する前に非同期の操作を完了する必要がある場合は、args.setPromise() を呼び出してください。
-	};
+        }
+    };
 
-	app.start();
+    app.oncheckpoint = function(args) {
+        //TODO: このアプリケーションは中断しようとしています。ここで中断中に維持する必要のある状態を保存します。
+        // WinJS.Application.sessionState オブジェクトを使用している可能性があります。このオブジェクトは、中断の間自動的に保存され、復元されます。
+        //ご使用のアプリケーションを中断する前に非同期の操作を完了する必要がある場合は、args.setPromise() を呼び出してください。
+    };
+
+    app.start();
 
 
 })();
 
 
-(function () {
+(function() {
     "use strict";
 
     var app = WinJS.Application;
@@ -39,23 +39,24 @@
     /**
      * ここからcanvas部門
      */
-    var ctx, canvas = [], results = [];
+    var ctx, canvas = [],
+        results = [];
     var appFolder = Windows.Storage.ApplicationData.current.localFolder;
 
     //初期化関数
-    $(function () {
+    $(function() {
         // Canvasのコンテキスト取得とクリック時のイベントハンドラ登録
         canvas = document.getElementById("picture");
         ctx = canvas.getContext("2d");
 
         //canvasの上でマウスが押されたとき
-        canvas.onmousedown = function (e) {
+        canvas.onmousedown = function(e) {
             for (var i = 0; i < results.length; i++) {
                 var x = e.offsetX,
                     y = e.offsetY;
                 if (results[i].rect.isHit(x, y)) {
                     document.getElementById("selectedText").textContent = results[i].text;
-                
+
                 }
             }
         }
@@ -65,7 +66,7 @@
 
     var mySplitView = window.mySplitView = {
         splitView: null,
-        takePicture: WinJS.UI.eventHandler(function (ev) {
+        takePicture: WinJS.UI.eventHandler(function(ev) {
             // カメラアイコンクリック時のコールバック
             // カメラを起動してファイルに保存するまでの処理をここから開始します。
             //magは倍率、fixは固定の意味
@@ -73,37 +74,37 @@
 
             // 撮影と保存
             var captureUI = new Windows.Media.Capture.CameraCaptureUI();
-            captureUI.captureFileAsync(Windows.Media.Capture.CameraCaptureUIMode.photo).then(function (data) {
+            captureUI.captureFileAsync(Windows.Media.Capture.CameraCaptureUIMode.photo).then(function(data) {
                 if (data) {
                     document.getElementById('imgCapture').src = window.URL.createObjectURL(data);
                     appFolder.createFileAsync("capture.jpg",
-                        Windows.Storage.CreationCollisionOption.replaceExisting).then(function (file) {
-                            return data.copyAndReplaceAsync(file);
-                        }).then(function () {
-                            recognizeImage();
-                        });
+                        Windows.Storage.CreationCollisionOption.replaceExisting).then(function(file) {
+                        return data.copyAndReplaceAsync(file);
+                    }).then(function() {
+                        recognizeImage();
+                    });
                 }
             });
 
             // 描写と画像認識
             function recognizeImage() {
-                appFolder.getFileAsync("capture.jpg").then(function (file) {
-                    img = new Image();
-                    img.src = file.path;
-                    var h = img.naturalHeight;
-                    var w = img.naturalWidth;
-                    Hmag = 540 / h;
-                    Wmag = 960 / w;
-                    Hfix = Hmag * h;
-                    Wfix = Wmag * w; //540px,960pxに固定
-                    canvas.height = Hfix;
-                    canvas.width = Wfix;
-                    canvas.style.height = Hfix + "px";
-                    canvas.style.width = Wfix + "px";
-                    repaint([]);
-                    return file.openReadAsync();
-                })
-                    .then(function (stream) {
+                appFolder.getFileAsync("capture.jpg").then(function(file) {
+                        img = new Image();
+                        img.src = file.path;
+                        var h = img.naturalHeight;
+                        var w = img.naturalWidth;
+                        Hmag = 540 / h;
+                        Wmag = 960 / w;
+                        Hfix = Hmag * h;
+                        Wfix = Wmag * w; //540px,960pxに固定
+                        canvas.height = Hfix;
+                        canvas.width = Wfix;
+                        canvas.style.height = Hfix + "px";
+                        canvas.style.width = Wfix + "px";
+                        repaint([]);
+                        return file.openReadAsync();
+                    })
+                    .then(function(stream) {
                         var blob = MSApp.createBlobFromRandomAccessStream("image/jpeg", stream);
                         return WinJS.xhr({
                             type: "POST",
@@ -116,10 +117,10 @@
                             responseType: "json"
                         });
                     })
-                    .then(function (request) {
+                    .then(function(request) {
                         // 画像解析結果
                         extraction(request.response);
-                    }, function (error) {
+                    }, function(error) {
                         alert(error);
                     });
             }
@@ -179,7 +180,7 @@
                 this.y = y;
                 this.w = w;
                 this.h = h;
-                this.isHit = function (p, q) {
+                this.isHit = function(p, q) {
                     if (this.x < p && p < this.x + this.w &&
                         this.y < q && q < this.y + this.h) {
                         return true;
@@ -194,7 +195,7 @@
         /**
          *ここまでcanvas部門
          */
-        recognize: WinJS.UI.eventHandler(function (ev) {
+        recognize: WinJS.UI.eventHandler(function(ev) {
             // 地球アイコンクリック時のコールバック
             // 画像認識、翻訳といった処理をここから開始します。
             // unsupported.
@@ -213,19 +214,19 @@
             msg.lang = document.querySelector('#selectVoice').value; // en-US or ja-UP
 
             // 終了した時の処理
-            msg.onend = function (event) {
+            msg.onend = function(event) {
                 console.log('speech end. time=' + event.elapsedTime + 's');
             }
             speechSynthesis.speak(msg); // テキストスピーチ開始
-        
 
 
-    
+
+
 
             document.getElementById("app").classList.add("show-home");
             document.getElementById("app").classList.remove("show-settings");
         }),
-        settings: WinJS.UI.eventHandler(function (ev) {
+        settings: WinJS.UI.eventHandler(function(ev) {
             // 設定アイコンクリック時のコールバック
             // もし何らかの設定が必要なときはここから開始します。
 
@@ -241,11 +242,11 @@
 
 
     //processAll
-    WinJS.UI.processAll().then(function () {
+    WinJS.UI.processAll().then(function() {
         mySplitView.splitView = document.querySelector(".splitView").winControl;
         new WinJS.UI._WinKeyboard(mySplitView.splitView.paneElement);
     });
 
     app.start();
-         
+
 })();
