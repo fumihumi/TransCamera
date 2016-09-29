@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    このページは以下のURLの記事を参考にしました。    
+    http://try.buildwinjs.com/tutorial/1Basics/markSupport/
+    -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>TransCamera</title>
+
+    <!-- WinJS 参照 -->
+    <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
+    <script src="WinJS/js/base.js"></script>
+    <script src="WinJS/js/ui.js"></script>
+
+    <!-- TransCamera 参照 -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/jquery-2.2.5.min.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+<body class="win-type-body">
+    <div id="app" class="show-home win-type-body">
+        <!-- SPLIT VIEW -->
+        <div class="splitView" data-win-control="WinJS.UI.SplitView">
+            <!-- Pane area -->
+            <div>
+                <div class="header">
+                    <button class="win-splitviewpanetoggle"
+                            data-win-control="WinJS.UI.SplitViewPaneToggle"
+                            data-win-options="{ splitView: select('.splitView') }"></button>
+                    <div class="title"><h2 class="win-h2">翻訳カメラ</h2></div>
+
+                </div>
+                <div class="nav-commands">
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Take a picture', icon: 'camera', oninvoked: mySplitView.takePicture}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Translate', icon: 'globe', oninvoked: mySplitView.recognize}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Setting', icon: 'settings', oninvoked: mySplitView.settings}"></div>
+                </div>
+            </div>
+            <!-- Content area -->
+            <button class="win-splitviewpanetoggle second-button not-small"
+                    data-win-control="WinJS.UI.SplitViewPaneToggle"
+                    data-win-options="{ splitView: select('.splitView') }"></button>
+            <div class="contenttext">
+                <div class="home-ui">
+                    <p>選択した文字列：<span id="selectedText"></span></p>
+                    <img id="imgCapture" style="display:none" />
+                    <canvas id="picture"></canvas>
+                    <ul id="list"></ul>
+                </div>
+                <div class="settings-ui">
+                    <h2 class="win-h2">設定画面</h2>
+                    <p>ここになにかしらの設定画面を配置します</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
