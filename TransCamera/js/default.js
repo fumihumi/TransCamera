@@ -15,7 +15,7 @@
 				// スムーズなユーザー エクスペリエンスとなるよう、ここでアプリケーション状態を復元し、アプリが停止したようには見えないようにします。
 			}
 			args.setPromise(WinJS.UI.processAll());
-			init();
+		
 		}
 	};
 
@@ -27,33 +27,7 @@
 
 	app.start();
 
-	function init() {
-	    document.querySelector('#speak').onclick = function () {
-
-	        // unsupported.
-	        if (!'SpeechSynthesisUtterance' in window) {
-	            alert('Web Speech API には未対応です.');
-	            return;
-	        }
-
-	        // 話すための機能をインスタンス化色々と値を設定.
-	        var msg = new SpeechSynthesisUtterance();
-	        var voices = window.speechSynthesis.getVoices();
-	        msg.volume = document.querySelector('#volume').value;
-	        msg.text = document.querySelector("#selectedText");
-	        msg.rate = document.querySelector('#rate').value;
-	        //  msg.pit document.querySelector('#text').value; // しゃべる内容
-	        msg.lang = document.querySelector('#selectVoice').value; // en-US or ja-UP
-
-	        // 終了した時の処理
-	        msg.onend = function (event) {
-	            console.log('speech end. time=' + event.elapsedTime + 's');
-	        }
-	        speechSynthesis.speak(msg); // テキストスピーチ開始
-	    };
-
-
-	};
+	  
 })();
 
 
@@ -138,20 +112,20 @@
                                 "Content-Type": "application/octet-stream",
                                 "Ocp-Apim-Subscription-Key": "31060de8823143e88391bec444d19298",
                             },
-                            data: blob
+                            data: blob,
+                            responseType: "json"
                         });
                     })
                     .then(function (request) {
                         // 画像解析結果
-                        extraction(request);
+                        extraction(request.response);
                     }, function (error) {
                         alert(error);
                     });
             }
 
-            // JSONに変換して抽出
-            function extraction(data) {
-                var json_data = JSON.parse(data.responseText);
+            // JSONから抽出
+            function extraction(json_data) {
                 for (var i = 0; i < json_data.regions.length; i++) {
                     var r = json_data.regions[i];
                     for (var j = 0; j < r.lines.length; j++) {
@@ -160,7 +134,7 @@
                         var lineStr = "";
                         for (var k = 0; k < line.words.length; k++) {
                             var word = line.words[k];
-                            lineStr += word.text + " ";
+                            lineStr += word.text;
                         }
 
                         var p = linebox.split(",");
@@ -223,8 +197,30 @@
         recognize: WinJS.UI.eventHandler(function (ev) {
             // 地球アイコンクリック時のコールバック
             // 画像認識、翻訳といった処理をここから開始します。
-            var msgBox = new Windows.UI.Popups.MessageDialog("地球アイコン押下時の処理を書きます");
-            msgBox.showAsync()
+            // unsupported.
+            if (!'SpeechSynthesisUtterance' in window) {
+                alert('Web Speech API には未対応です.');
+                return;
+            }
+
+            // 話すための機能をインスタンス化色々と値を設定.
+            var msg = new SpeechSynthesisUtterance();
+            var voices = window.speechSynthesis.getVoices();
+            msg.volume = document.querySelector('#volume').value / 20 + 0.5;
+            msg.text = document.querySelector('#selectedText').innerText;
+            msg.rate = document.querySelector('#rate').value / 20 + 0.5;
+            //  msg.pit document.querySelector('#text').value; // しゃべる内容
+            msg.lang = document.querySelector('#selectVoice').value; // en-US or ja-UP
+
+            // 終了した時の処理
+            msg.onend = function (event) {
+                console.log('speech end. time=' + event.elapsedTime + 's');
+            }
+            speechSynthesis.speak(msg); // テキストスピーチ開始
+        
+
+
+    
 
             document.getElementById("app").classList.add("show-home");
             document.getElementById("app").classList.remove("show-settings");
@@ -232,8 +228,9 @@
         settings: WinJS.UI.eventHandler(function (ev) {
             // 設定アイコンクリック時のコールバック
             // もし何らかの設定が必要なときはここから開始します。
-            var msgBox = new Windows.UI.Popups.MessageDialog("設定アイコン押下時の処理を書きます");
-            msgBox.showAsync()
+
+            //var msgBox = new Windows.UI.Popups.MessageDialog("設定アイコン押下時の処理を書きます");
+            //msgBox.showAsync()
 
             document.getElementById("app").classList.add("show-settings");
             document.getElementById("app").classList.remove("show-home");
