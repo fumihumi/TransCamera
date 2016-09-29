@@ -51,6 +51,9 @@
     <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\TransCamera\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\TransCamera\js\jquery-2.2.5.min.js">
+      <PackagePath>js\jquery-2.2.5.min.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\n1260128.STCN2\Documents\Kanacon_work\TransCamera\TransCamera\TransCamera\WinJS\js\en-US\ui.strings.js">
       <PackagePath>WinJS\js\en-US\ui.strings.js</PackagePath>
     </AppxPackagedFile>
