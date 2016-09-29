@@ -67,7 +67,7 @@
                 data: parameters,
                 dataType: "json",
                 success: function (success) {
-                    console.log(success)
+                    $('#result').text(success);
                 }
             })
         })
