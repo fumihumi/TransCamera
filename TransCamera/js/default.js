@@ -10,6 +10,7 @@
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
                 //TODO: このアプリケーションは新しく起動しました。ここでアプリケーションを初期化します。
+                init();
             } else {
                 // TODO: このアプリケーションは中断されてから終了しました。
                 // スムーズなユーザー エクスペリエンスとなるよう、ここでアプリケーション状態を復元し、アプリが停止したようには見えないようにします。
@@ -27,7 +28,31 @@
 
     app.start();
 
+    var accessToken;
 
+    function init(){
+
+        var uri = new Windows.Foundation.Uri("https://datamarket.accesscontrol.windows.net/v2/OAuth2-13");
+        var client = new Windows.Web.Http.HttpClient();
+        var keyValue = (new Windows.Web.Http.HttpClient()).defaultRequestHeaders;
+        keyValue["client_id"] = "KanaCon";
+        keyValue["client_secret"] = "ACyJeANuFz23Tnv19saT1/yDhoQ/BrLfKXyYlKvNIOM=";
+        keyValue["scope"] = "http://api.microsofttranslator.com";
+        keyValue["grant_type"] = "client_credentials";
+
+        var httpContent = new Windows.Web.Http.HttpFormUrlEncodedContent(keyValue);
+
+        client.postAsync(uri, httpContent).then(function (res) {
+            return res.content.readAsStringAsync();
+        }).then(function (response) {
+            var r = JSON.parse(response);
+            return r.access_token;
+        }).then(function (token) {
+            accessToken = token;
+        }).done(null, function (err) {
+            console.log(err);
+        })
+    }
 
     var app = WinJS.Application;
 
@@ -51,6 +76,28 @@
                     y = e.offsetY;
                 if (results[i].rect.isHit(x, y)) {
                     document.getElementById("selectedText").textContent = results[i].text;
+
+                    var text = $('#selectedText').text(),
+                    To = $('#languageTranslate [name=group1]:checked').val();
+                    var parameters = {
+                        text: text,
+                        to: To,
+                        from: "ja"
+                    };
+
+                    $.ajax({
+                        headers: {
+                            'Authorization': 'Bearer ' + accessToken
+                        },
+                        url: 'http://api.microsofttranslator.com/v2/Ajax.svc/Translate',
+                        data: parameters,
+                        dataType: "json",
+                        success: function (result) {
+                            $('#translateText').text(result);
+                            // 話すための機能をインスタンス化色々と値を設定.
+
+                        }
+                    });
 
 
                 }
@@ -198,50 +245,6 @@
             /*
              *ここからtarans
              */
-            var accessToken;
-
-            var uri = new Windows.Foundation.Uri("https://datamarket.accesscontrol.windows.net/v2/OAuth2-13");
-            var client = new Windows.Web.Http.HttpClient();
-            var keyValue = (new Windows.Web.Http.HttpClient()).defaultRequestHeaders;
-            keyValue["client_id"] = "KanaCon";
-            keyValue["client_secret"] = "ACyJeANuFz23Tnv19saT1/yDhoQ/BrLfKXyYlKvNIOM=";
-            keyValue["scope"] = "http://api.microsofttranslator.com";
-            keyValue["grant_type"] = "client_credentials";
-
-            var httpContent = new Windows.Web.Http.HttpFormUrlEncodedContent(keyValue);
-
-            client.postAsync(uri, httpContent).then(function (res) {
-                return res.content.readAsStringAsync();
-            }).then(function (response) {
-                var r = JSON.parse(response);
-                return r.access_token;
-            }).then(function (token) {
-                accessToken = token;
-            }).then(null, function (err) {
-                console.log(err);
-            }).done(function () {
-                var text = $('#selectedText').text(),
-                    To = $('#languageTranslate').val();
-                var parameters = {
-                    text: text,
-                    to: To,
-                    from: "ja"
-                };
-
-                $.ajax({
-                    headers: {
-                        'Authorization': 'Bearer ' + accessToken
-                    },
-                    url: 'http://api.microsofttranslator.com/v2/Ajax.svc/Translate',
-                    data: parameters,
-                    dataType: "json",
-                    success: function (result) {
-                        $('#translateText').text(result);
-                        // 話すための機能をインスタンス化色々と値を設定.
-
-                    }
-                });
-            });
 
 
 
