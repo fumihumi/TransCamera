@@ -242,11 +242,8 @@
             // 地球アイコンクリック時のコールバック
             // 画像認識、翻訳といった処理をここから開始します。
             // unsupported.
-            /*
-             *ここからtarans
-             */
-
-
+            var transText = $('#translateText').text();
+            speak(transText);
 
             document.getElementById("app").classList.add("show-home");
             document.getElementById("app").classList.remove("show-settings");
@@ -273,7 +270,7 @@
         msg.text = text;
         msg.rate = document.querySelector('#rate').value / 20 + 0.5;
         //  msg.pit document.querySelector('#text').value; // しゃべる内容
-        msg.lang = document.querySelector('#languageTranslate').value;
+        msg.lang = $('#languageTranslate [name=group1]:checked').val();
         //msg.lang = document.querySelector('#selectVoice').value; // en-US or ja-UP
 
         // 終了した時の処理
